@@ -8,6 +8,7 @@ First-year Projects
 	Columns_Game (Python)
 		Simple implementation of the Columns game. The UI is designed using the Pygame library.
    
+   
 Second-year Projects
   
 	Maze (C++)
@@ -30,7 +31,13 @@ Second-year Projects
 	
 	Pdf_TableExtraction (Python)
 		Scan the pdf using OCR software, then utilize pdfminer.six library (from Github) to extract the coordinates of characters. Analyzing and rearranging the coordinates to form tables and store them as Excels.
-	
+		
+	ICS_SearchEngine (Python)
+		Scrap all links from ics.uci.edu and store them as local htmls (this is from the previous project which I did not upload here).
+		Analyzed the corpus provided and extracted/tokenized stems from the html, then stored the posting list (document ID with tf-idf) in file as database using Pandas.Tokenized the query and found corresponds posting list in database.
+		Calculated the score utilizing Cosine Similarity and ranked the result.
+		
+		
 Third-year Projects (updating...)
 
 	Checkers_AI (Python)
