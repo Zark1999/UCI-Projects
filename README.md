@@ -34,8 +34,8 @@ Second-year Projects
 		
 	ICS_SearchEngine (Python)
 		Scrap all links from ics.uci.edu and store them as local htmls (this is from the previous project which I did not upload here).
-		Analyzed the corpus provided and extracted/tokenized stems from the html, then stored the posting list (document ID with tf-idf) in file as database using Pandas.Tokenized the query and found corresponds posting list in database.
-		Calculated the score utilizing Cosine Similarity and ranked the result.
+		Analyze the corpus provided and extracted/tokenized stems from the html, then stored the posting list (document ID with tf-idf) in file as database using Pandas.Tokenized the query and found corresponds posting list in database.
+		Calculate the score utilizing Cosine Similarity and ranked the result.
 		
 		
 Third-year Projects (updating...)
