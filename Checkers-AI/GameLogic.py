@@ -6,8 +6,6 @@ from AI_Extensions import *
 from StudentAI import StudentAI
 from ManualAI import ManualAI
 
-import pandas as pd
-
 class GameLogic:
 
     def __init__(self,col,row,p,mode,debug):
@@ -61,23 +59,26 @@ class GameLogic:
                 player = 2
             else:
                 player = 1
+
         if winPlayer == -1:
-            print("Tie",file=fh)
+            print("Tie", file=fh)
         else:
-            print('player',winPlayer,'wins',file=fh)
+            print('player', winPlayer, 'wins', file=fh)
         if self.mode == 'n' or self.mode == 'network' or self.mode == 'l' or self.mode == 'local':
             for AI in self.ai_list:
                 if type(AI) is IOAI:
                     AI.close()
-
-        index = pd.read_pickle("data.pkl")
-        if winPlayer == 1:
-            index["testAI"]["1_win"] += 1
-        elif winPlayer == 2:
-            index["testAI"]["1_lose"] += 1
-        else:
-            index["testAI"]["tie"] += 1
-        index.to_pickle("data.pkl")
+        with open('data.txt', "r+") as f:
+            index = eval(f.read().strip())
+            f.seek(0)
+            if winPlayer == 1:
+                index["testAI"]["1_win"] += 1
+            elif winPlayer == 2:
+                index["testAI"]["1_lose"] += 1
+            else:
+                index["testAI"]["tie"] += 1
+            f.write(str(index))
+            f.truncate()
 
         return winPlayer
 
