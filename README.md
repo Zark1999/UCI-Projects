@@ -41,4 +41,8 @@ Second-year Projects
 Third-year Projects (updating...)
 
 	Checkers_AI (Python)
-		Utilize alpha-beta pruning as the game AI alogrithm.
+		Utilize alpha-beta pruning as the basic game AI alogrithm.
+		Add evaluation functions to make the program "smarter".
+		Add asyncio lib to concurrently run 10 games at the same time (modified to 20 in the openlab(VM)).
+		Over 90% win-rate against depth-4 alpha-beta pruning AI.
+	
