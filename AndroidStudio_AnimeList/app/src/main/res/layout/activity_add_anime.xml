@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AddAnimeActivity">
+
+    <TextView
+        android:id="@+id/categoryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ListView
+        android:id="@+id/anime_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/category_name">
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/editAnimeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/anime_listview"
+        android:hint="Enter an anime" />
+
+    <SeekBar
+        android:id="@+id/editAnimeRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10">
+
+    </SeekBar>
+
+    <Button
+        android:id="@+id/addAnimeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editAnimeName"
+        android:text="Add Anime"
+        android:textAlignment="center"/>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/animeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ListView
+        android:id="@+id/episode_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/category_name">
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/editEpisodeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/episode_listview"
+        android:hint="Enter an episode" />
+
+    <EditText
+        android:id="@+id/editEpisodeLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editEpisodeName"
+        android:hint="Enter a link of the episode" />
+
+    <EditText
+        android:id="@+id/editEpisodeDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editEpisodeLink"
+        android:hint="Enter the description of the episode" />
+
+    <Button
+        android:id="@+id/addEpisodeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEpisodeDescription"
+        android:text="Add Episode"
+        android:textAlignment="center"/>
+
+</LinearLayout>
