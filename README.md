@@ -46,3 +46,7 @@ Third-year Projects (updating...)
 		Add asyncio lib to concurrently run 10 games at the same time (modified to 20 in the openlab(VM)).
 		Over 90% win-rate against depth-4 alpha-beta pruning AI.
 	
+	AndroidStudio_AnimeList (Java, Android Studio, Firebase)
+		Use three Class, acitivity and listAdapter to perform three pages, where a list view is shown on each page.
+		First page shows category. Second page shows the Anime in that category. Third page shows the episodes of that anime.
+		All data are saved in firebase Database. CRUD are implemented.
